@@ -15,7 +15,7 @@ public abstract class Element {
 	{
 		name = inName;
 	}
-	
+
 	public String getName()
 	{
 		return name;

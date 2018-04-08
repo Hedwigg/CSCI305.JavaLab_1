@@ -3,8 +3,9 @@ package csci305.javalab;
 import java.util.Scanner;
 
 public class Main {
+	static Scanner scanner;
 	public static void main(String[] args)
-	{		
+	{
 		System.out.println("Welcome to Rock, Paper, Sissors, Lizard, Spock, implemented by Joel Lechman");
 		
 		System.out.println("Please choose two Players:");
@@ -24,7 +25,7 @@ public class Main {
 		Player p2 = promptForPlayer();
 		
 		System.out.println();
-		System.out.println(p1.getName() + " vs. " + p2.getName() + ". Go1!");
+		System.out.println(p1.getName() + " vs. " + p2.getName() + ". Go!");
 		System.out.println();
 		
 		
@@ -80,7 +81,7 @@ public class Main {
 	
 	public static Player promptForPlayer()
 	{		
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		int input = scanner.nextInt();
 		
 		switch(input)

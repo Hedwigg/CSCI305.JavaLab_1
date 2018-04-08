@@ -141,6 +141,7 @@ public class Outcome {
 				first = "Spock smashes Scissors";
 				second = "Win";
 				break;
+				
 			case "Rock":
 				first = "Spock vaporizes Rock";
 				second = "Win";
@@ -155,10 +156,12 @@ public class Outcome {
 				first = "Paper disproves Spock";
 				second = "Lose";
 				break;
+				
 			case "Spock":
 				first = "Spock equals Spock";
 				second = "Tie";
 				break;
+				
 			default:
 				first = "Error "+ spock.getName();
 				second = "error" + x.getName();

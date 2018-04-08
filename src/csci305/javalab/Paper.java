@@ -4,7 +4,6 @@ public class Paper extends Element{
 
 	public Paper(String inName) {
 		super(inName);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
