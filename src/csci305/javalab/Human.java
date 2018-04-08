@@ -44,7 +44,6 @@ public class Human extends Player{
 			}
 		}
 		Element move = options[input-1];
-		scanner.close();		//close scanner
 		return move;
 	}
 
