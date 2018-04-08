@@ -17,7 +17,7 @@ public class Outcome {
 				second = "Win"; 
 				
 			case "Rock":
-				first = "Lizard poisons Spock";
+				first = "Rock crushes Lizard";
 				second = "Lose";
 				break;
 				
