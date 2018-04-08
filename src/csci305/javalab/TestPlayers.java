@@ -1,5 +1,10 @@
 package csci305.javalab;
 
+/*
+ * @author Isaac Griffith 
+ * 
+ * Pre-made method to test players
+ */
 public class TestPlayers {
 
     public static void main(String args[]) {

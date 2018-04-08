@@ -29,7 +29,7 @@ public class Human extends Player{
 	@Override
 	public Element Play() {
 		int input = 0;
-		while(input < 1|| input > 5)			//TODO!!!!!!!! MAKE SURE THAT THIS ONLY ACCEPTS PROPER INPUTS. NOT FULLY TESTED YET!!!!!
+		while(input < 1|| input > 5)
 		{
 			System.out.println("Please choose a move from the list below:");
 			System.out.println("(1) : Rock");

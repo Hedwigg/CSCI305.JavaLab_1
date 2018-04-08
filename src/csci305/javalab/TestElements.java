@@ -1,5 +1,15 @@
 package csci305.javalab;
 
+
+
+/*
+ * @author Isaac Griffith 
+ * 
+ * Pre-made method to test elements
+ */
+
+
+
 public class TestElements {
 
 	  public static void main(String args[]) {

@@ -1,5 +1,23 @@
 package csci305.javalab;
 
+
+/*
+ * @author Joel Lechman
+ * 
+ * This class creates two values based off of the two elements passed in when it is initialized.
+ * 
+ * The first variable: "first" is a string describing the outcome of the comparison of the two elements.
+ * The second variable: "Second" is a string describing the winner of the round based on the same comparison.
+ * 
+ * For readability and modularity, there are 5 overloaded constructors. One for each possible element that can be passed in.
+ * Therefore if more elements are added to the game a constructor can easily be copied and modified for said element.
+ * 
+ * 
+ * 
+ * The comparisons are made using the names of the elements passed in. (Specifically the second element).
+ *
+ */
+
 public class Outcome {
 	public String first;
 	public String second;
