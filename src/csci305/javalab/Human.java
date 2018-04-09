@@ -4,26 +4,11 @@ import java.util.Scanner;
 
 public class Human extends Player{
 	
-	Element [] options = new Element[5];
-	Rock rock = new Rock("Rock");
-	Paper paper = new Paper("Paper");
-	Scissors scissors = new Scissors("Scissors");
-	Lizard lizard = new Lizard("Lizard");
-	Spock spock = new Spock("Spock");
-	
-	
 	Scanner scanner = new Scanner(System.in);
-	
-	
 	
 	public Human(String inName) {
 		super(inName);
-		//initialize the options array.
-		options[0] = rock;
-		options[1] = paper;
-		options[2] = scissors;
-		options[3] = lizard;
-		options[4] = spock;
+		
 	}
 
 	@Override
@@ -43,7 +28,7 @@ public class Human extends Player{
 				System.out.println("Invalid move. Please Try again.");
 			}
 		}
-		Element move = options[input-1];
+		Element move = moves[input-1];
 		return move;
 	}
 

@@ -9,23 +9,43 @@ package csci305.javalab;
 
 public abstract class Player {
 	private String name;
-	
-	
+	private Element lastMove;
+	public Player opponent;
+
+
+	Element [] moves = new Element[5];
+	Rock rock = new Rock("Rock");
+	Paper paper = new Paper("Paper");
+	Scissors scissors = new Scissors("Scissors");
+	Lizard lizard = new Lizard("Lizard");
+	Spock spock = new Spock("Spock");
+
 	public Player (String inName)
 	{
 		name = inName;
+		//initialize the options array.
+		moves[0] = rock;
+		moves[1] = paper;
+		moves[2] = scissors;
+		moves[3] = lizard;
+		moves[4] = spock;
 	}
-	
+
 	public String getName()
 	{
 		return name;
 	}
-	
-	public abstract Element Play();
-	
-}
 
-//todo
-//variable to hold last play (which is updated in every player's version of play()
-//a get method for this variable so that lastplaybot can find the information.
-//somehow give lastplaybot the ability to figure out it's opponent.
+	public void updateLastMove(Element move)
+	{
+		lastMove = move;
+	}
+
+	public Element getLastMove()
+	{
+		return lastMove;
+	}
+
+	public abstract Element Play();
+
+}

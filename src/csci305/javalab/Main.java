@@ -28,6 +28,8 @@ public class Main {
 		System.out.println(p1.getName() + " vs. " + p2.getName() + ". Go!");
 		System.out.println();
 		
+		p1.opponent = p2;	//setting opponents for lastPlay bot
+		p2.opponent = p1;
 		
 		
 		
@@ -40,6 +42,13 @@ public class Main {
 			
 			Element p1Play = p1.Play();
 			Element p2Play = p2.Play();
+			
+			//updating lastMove
+			p1.updateLastMove(p1Play); //update lastMove for lastplaybot
+			p2.updateLastMove(p2Play);
+			
+			
+			
 			
 			System.out.println("Player 1 chose "+ p1Play.getName());
 			System.out.println("Player 2 chose "+ p2Play.getName());
@@ -64,6 +73,8 @@ public class Main {
 			
 			roundCount++;
 			System.out.println("");
+			
+			
 		}
 		
 		System.out.println("The score is " + p1Score + " to " + p2Score + ".");
