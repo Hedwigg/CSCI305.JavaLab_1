@@ -1,5 +1,10 @@
 package csci305.javalab;
 
+
+/*
+ * Class iterative bot is a player that chooses its next move by iterating through the list of available moves over and over.
+ */
+
 public class IterativeBot extends Player{
 	
 	private int iterator = 0;

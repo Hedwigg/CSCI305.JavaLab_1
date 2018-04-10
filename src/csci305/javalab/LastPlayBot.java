@@ -1,5 +1,9 @@
 package csci305.javalab;
 
+/*
+ * Class last play bot is a player that chooses its move by picking what it's opponent chose last. If its the first round, this bot defaults to picking Rock as it's move.
+ */
+
 public class LastPlayBot extends Player{
 
 	Boolean firstRound = true;

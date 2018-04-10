@@ -9,11 +9,11 @@ package csci305.javalab;
 
 public abstract class Player {
 	private String name;
-	private Element lastMove;
+	private Element lastMove;		//holder for lastplaybot
 	public Player opponent;
 
 
-	Element [] moves = new Element[5];
+	Element [] moves = new Element[5];			//list of possible moves for bots to reference.
 	Rock rock = new Rock("Rock");
 	Paper paper = new Paper("Paper");
 	Scissors scissors = new Scissors("Scissors");
