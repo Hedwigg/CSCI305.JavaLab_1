@@ -36,11 +36,16 @@ public abstract class Player {
 		return name;
 	}
 
+	//helper method for lastPlayBot use
+	//update lastPlay for next Term
 	public void updateLastMove(Element move)
 	{
 		lastMove = move;
 	}
 
+	
+	//helper method for lastPlayBot use
+	//access lastPlay variable in supertype player.
 	public Element getLastMove()
 	{
 		return lastMove;

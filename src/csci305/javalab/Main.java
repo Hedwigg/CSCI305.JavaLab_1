@@ -6,8 +6,11 @@ public class Main {
 	static Scanner scanner;
 	public static void main(String[] args)
 	{
+		int maxRounds = 5;	//to avoid hardcoding number of rounds
+		//game intro
 		System.out.println("Welcome to Rock, Paper, Sissors, Lizard, Spock, implemented by Joel Lechman");
 		
+		//display player options for user.
 		System.out.println("Please choose two Players:");
 		System.out.println("(1) Human");
 		System.out.println("(2) StupidBot");
@@ -17,10 +20,11 @@ public class Main {
 		System.out.println("(6) MyBot");
 		System.out.println("");
 		
-		
+		//user chooses player 1
 		System.out.print("Select Player 1: ");
 		Player p1 = promptForPlayer();
 		
+		//user chooses player 2
 		System.out.print("Select Player 2: ");
 		Player p2 = promptForPlayer();
 		
@@ -36,7 +40,7 @@ public class Main {
 		int roundCount = 1;
 		int p1Score = 0;
 		int p2Score = 0;
-		while(roundCount <= 5)
+		while(roundCount <= maxRounds)	//maxRounds to avoid hardcoding # of rounds. 	
 		{
 			System.out.println("Round " + roundCount + ":");
 			
@@ -58,7 +62,7 @@ public class Main {
 			String one = result.substring(0, result.indexOf('-')); 
 			System.out.println(one);
 			
-			
+			//determine who won the round. or tie.
 			if(result.contains("Tie")){
 				System.out.println("Round was a tie");
 			}else if(result.contains("Win")) //p1 wins the round
@@ -77,6 +81,7 @@ public class Main {
 			
 		}
 		
+		//display score at the end of the game & display the determined winner.
 		System.out.println("The score is " + p1Score + " to " + p2Score + ".");
 		if(p1Score > p2Score)	//if p1 wins the game
 		{
@@ -90,6 +95,13 @@ public class Main {
 		}
 	}
 	
+	
+	
+	/*
+	 * promptForPlayer() is a helper method that prompts for user's input to determine
+	 * who the players of the game will be.
+	 * @returns a class of type player for further handling.
+	 */
 	public static Player promptForPlayer()
 	{		
 		scanner = new Scanner(System.in);

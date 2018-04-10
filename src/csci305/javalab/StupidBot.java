@@ -1,6 +1,13 @@
 package csci305.javalab;
 
+/*
+ * Stupid bot is a pathetic AI that chooses the same move every time expecting to win each round\
+ * sub class of Player
+ */
+
+
 public class StupidBot extends Player{
+	
 	public StupidBot(String inName) {
 		super(inName);
 	}

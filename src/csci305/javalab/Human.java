@@ -1,7 +1,12 @@
 package csci305.javalab;
 
 import java.util.Scanner;
-
+/*
+ * Class human is of type player. It handles user input to choose a move each time play() is called.
+ * 
+ * @author Joel Lechman
+ * 
+ */
 public class Human extends Player{
 	
 	Scanner scanner = new Scanner(System.in);
@@ -11,6 +16,13 @@ public class Human extends Player{
 		
 	}
 
+	
+	/*
+	 * (non-Javadoc)
+	 * @see csci305.javalab.Player#Play()
+	 * 
+	 * returns an move of type Element.
+	 */
 	@Override
 	public Element Play() {
 		int input = 0;
@@ -23,7 +35,7 @@ public class Human extends Player{
 			System.out.println("(4) : Lizard");
 			System.out.println("(5) : Spock");
 			input = scanner.nextInt();
-			if(input < 1 || input > 5)
+			if(input < 1 || input > 5)		//handle if user's input is invalid. i.e. warn the user and prompt again.
 			{
 				System.out.println("Invalid move. Please Try again.");
 			}

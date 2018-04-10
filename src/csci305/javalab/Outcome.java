@@ -22,7 +22,7 @@ public class Outcome {
 	public String first;
 	public String second;
 	
-	public Outcome(Lizard lizard, Element x) {
+	public Outcome(Lizard lizard, Element x) {			//constructor for first parameter of type lizard
 		switch(x.getName())
 		{
 			case "Paper":
@@ -54,7 +54,7 @@ public class Outcome {
 		}
 	}
 
-	public Outcome(Paper paper, Element x) {
+	public Outcome(Paper paper, Element x) {	//constructor for first parameter of type paper
 		switch(x.getName())
 		{
 			case "Rock":
@@ -87,7 +87,7 @@ public class Outcome {
 		}
 	}
 
-	public Outcome(Rock rock, Element x) {
+	public Outcome(Rock rock, Element x) {			//constructor for first parameter of type rock
 		switch(x.getName())
 		{
 			case "Scissors":
@@ -119,7 +119,7 @@ public class Outcome {
 		}
 	}
 
-	public Outcome(Scissors scissors, Element x) {
+	public Outcome(Scissors scissors, Element x) {		//constructor for first parameter of type scissors
 		switch(x.getName())
 		{
 			case "Paper":
@@ -152,7 +152,7 @@ public class Outcome {
 		}
 	}
 
-	public Outcome(Spock spock, Element x) {
+	public Outcome(Spock spock, Element x) {			//constructor for first parameter of type spock
 		switch(x.getName())
 		{
 			case "Scissors":
