@@ -104,11 +104,26 @@ public class Main {
 	 * @returns a class of type player for further handling.
 	 */
 	public static Player promptForPlayer()
-	{		
+	{	
+		int input = -1;
 		scanner = new Scanner(System.in);
-		int input = scanner.nextInt();
 		
-		switch(input)
+		//check to make sure user input is valid.
+		while(input < 1|| input > 6)
+		{
+			input = scanner.nextInt();	//first grab input
+
+			if (input < 1 || input > 6)	//if invalid, prompt & loop
+			{
+				System.out.println("Error, please choose a valid option for a player.");	
+			}else						//if valid, break out of check
+			{
+				break;
+			}
+			
+		}
+		
+		switch(input)		//return a player based on user's input
 		{
 		case(1):
 			return new Human("Human");
