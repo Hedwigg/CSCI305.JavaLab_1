@@ -1,0 +1,55 @@
+Joel Lechman
+Java Lab
+4/11/18
+
+
+
+1.	Describe your Player LastPlayBot. How did you implement this strategy? (5 points)
+		My LastPlayBot uses get methods in Player to retrieve it's opponents last move before playing its own. The lastplay element is saved in class Player and all players have a get method to access it.
+		Each player is aware of it's opponent because they are set in class Main after the user chooses the two players.
+	
+	
+2.	Describe your Player MyBot, explaining the strategy you employed and how you accomplished it. (5 points)
+	 	MyBot is a true Hipster, it despises the new version of this classic game. Therefore it will never choose the Lizard or Spock option
+	 	out of pure hatred. Even if it means it is playing at a disadvantage. Therefore it picks from the "original" option set 
+	 	(rock,paper,scissors) at random. Using a random number generator similar to the RandomBot. It also uses a different move[] set so that it can never pick the Spock or Lizard options.
+
+
+
+3.	Using the course notes and any web resources of your choosing, explain the type system of Java, giving attention to the concepts of binding time, dynamic vs. static typing, strong vs. weak typing, and user-defined types (classes). 
+	Cite any sources you used other than class discussion or the textbook. (15 points)
+		Java is strongly statically typed meaning it expects variables, and classes to be declared before they can be assigned values (making binding times for these at compile time). Because it is statically typed, the binding of static,
+		private, and final methods is at compile time. It is strongly typed i.e. you have to type cast an int and a string before you can concatenate them.
+		Java does allow user defined types and overloading of primitive data types by user defined types for backwards compatibility reasons.
+	
+	
+	
+4.	Play a number of games, selecting your various players. Do you notice any trends? Are you, as the Human Player, able to beat any of the Bots on a consistent basis? (5 points)
+		I notice that stupid bot beats both random bot and iterative bot more often than I would have initially thought. Of course as a human player it is easy to beat most of the bots 100% of the time. I know what their next move will be before they make it.
+		The hardest bot to beat of course is the random bot because it isn't really possible to predict it's move. Second hardest is MyBot because even though it chooses from a smaller play set it is still at random.
+	
+	
+5.	Read the Wikipedia entry on Normal Form Games. Also, review the Wikipedia page on Rock-paper-scissors-lizard-Spock. 
+	Is it possible to design a Player strategy that is more likely to succeed? Why or why not? Explain in a paragraph. It is possible to answer this question even if you did not finish the Lab. (10 points)
+		Unless you know that your opponent's has a specific stragety and know it well enough to predict their actions with accuracy then it is NOT possible to come up with a method of playing that is more likely 
+		to succeed. By definition of normal form game, each time a player chooses a course of action, their choice has an equal probability of winning. In this version of the game any given move has a 2/5 
+		probability of winning and a 1/5 probability of a tie. Therefore unless you can read your opponent's mind or predict what they are going to choose there is no way to increase your chances of winning.
+		Now if there was a rule saying that you could not repeat choices (or an opponent that believes that this is a rule) you can easily narrow down what you should choose based on your opponent's last move. i.e. if in rock paper scissors your opponent just chose rock
+		you know that you are safe to pick scissors because neither paper or scissors can beat it. 
+
+
+6.	Name something you like about Java. Explain.
+		For a programming language it has a generally small learning curve, and it can easily be deployed across multiple platforms.
+	
+7.	Name something you dislike about Java. Explain.
+		For smaller programs, Java is slow and has unneeded overhead. For larger programs, the VM sometimes requires tweaking to improve performance of the system.
+	
+
+8.	Did you enjoy this lab? Which aspects did you like and/or dislike?
+		I enjoyed this lab because I didn't have to worry about syntax issues or trying to debug errors due to having a lot more experience with java than the previous languages we have used.
+
+9.	Approximately how many hours did you spend on this lab?
+		About 5 hours.
+
+10.	How much experience have you had in Java prior to this course?
+		Most of my college classes had us programming in Java so I would say that I have at least 3 years of programming in java for at least 1 class.
