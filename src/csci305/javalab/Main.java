@@ -6,7 +6,7 @@ public class Main {
 	static Scanner scanner;
 	public static void main(String[] args)
 	{
-		int maxRounds = 5;	//to avoid hardcoding number of rounds
+		int maxRounds = 5;	//to avoid hard coding number of rounds
 		//game intro
 		System.out.println("Welcome to Rock, Paper, Sissors, Lizard, Spock, implemented by Joel Lechman");
 		
@@ -57,12 +57,13 @@ public class Main {
 			System.out.println("Player 1 chose "+ p1Play.getName());
 			System.out.println("Player 2 chose "+ p2Play.getName());
 			
-			String result = (p1Play.compareTo(p2Play));
+			String result = (p1Play.compareTo(p2Play));				//getting result string
+		
 			
-			String one = result.substring(0, result.indexOf('-')); 
-			System.out.println(one);
+			String phrase = result.substring(0, result.indexOf('-')); 	//parsing compareTo result string for the phrase (ie. rock crushes scissors)
+			System.out.println(phrase);
 			
-			//determine who won the round. or tie.
+			//determine who won the round. or tie. using the result string
 			if(result.contains("Tie")){
 				System.out.println("Round was a tie");
 			}else if(result.contains("Win")) //p1 wins the round

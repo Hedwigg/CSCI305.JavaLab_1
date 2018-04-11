@@ -33,6 +33,7 @@ public class Outcome {
 			case "Spock":
 				first = "Lizard poisons Spock";
 				second = "Win"; 
+				break;
 				
 			case "Rock":
 				first = "Rock crushes Lizard";
